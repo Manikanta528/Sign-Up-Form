@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
 }
 .main{
     display: flex;
@@ -30,6 +31,8 @@
     font-size: 16px;
     color: #fff;
     text-align: center;
+    opacity: 80%;
+    margin-bottom: 8px;
     
 }
 .credit > a{
@@ -38,4 +41,88 @@
 }
 .formSection{
     flex:6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formHeader,.formFooter{
+    flex:3;
+}
+.formHeader{
+    
+    font-weight: 500;
+    padding: 30px;
+    padding-left: 80px;
+    background-color: rgb(249, 250, 251);
+    display: flex;
+    font-size: 20px;
+    align-items: flex-end;
+}
+.formMain{
+    flex:5;
+    height: 400px;
+
+    background-color: white;
+    box-shadow: -4px 21px 25px -30px rgba(0,0,0,0.75);
+    padding:30px;
+    padding-left: 80px;
+    font-size: 16px;
+}
+.formMain > .mainTitle{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+label{
+    font-size: 14px;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+input {
+    width: 256px;
+    margin: 4px 0px 20px 0px;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 2px;
+}
+.flex-box-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap : 14px;
+}
+.row{
+    display: flex;
+    gap: 32px;
+}
+button{
+    background-color: #006307;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 1000;
+   
+    padding: 12px 24px;
+    color: #fff;
+}
+button:hover{
+    background-color: #2cfe3a;
+    color: #000;
+}
+button:active{
+    background-color: rgb(58,58,58);
+    color: #fff;
+}
+.formFooter{
+    padding-top: 24px;
+    padding-left: 80px;
+}
+.login{
+    margin-top: 24px;
+    font-size: 16px;
+}
+.login > a{
+    color: #006307;
 }
